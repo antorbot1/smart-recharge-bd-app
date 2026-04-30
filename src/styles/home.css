@@ -1,0 +1,250 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.profileMini {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  text-align: left;
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e91e63, #ff7aa8);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(233, 30, 99, 0.25);
+}
+
+.profileText small {
+  color: #6b7280;
+  font-weight: 800;
+}
+
+.profileText h2 {
+  margin: 4px 0 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.topIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topIcons button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #e91e63;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+}
+
+.noticeCard {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 900;
+  box-shadow: 0 14px 28px rgba(34, 197, 94, 0.22);
+  margin-bottom: 14px;
+}
+
+.balanceCard {
+  background: linear-gradient(135deg, #e91e63, #ff7aa8);
+  color: white;
+  border-radius: 30px;
+  padding: 22px;
+  box-shadow: 0 22px 45px rgba(233, 30, 99, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.balanceCard::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: -65px;
+  top: -60px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+}
+
+.balanceCard p {
+  margin: 0;
+  font-weight: 800;
+  opacity: 0.92;
+}
+
+.balanceCard h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.balanceCard span {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.balanceCard button {
+  position: relative;
+  z-index: 2;
+  background: white;
+  color: #e91e63;
+  border-radius: 18px;
+  padding: 13px 14px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.promoCard {
+  margin: 16px 0;
+  min-height: 130px;
+  border-radius: 30px;
+  padding: 22px;
+  color: white;
+  background:
+    radial-gradient(circle at right, rgba(255,255,255,.25), transparent 35%),
+    linear-gradient(135deg, #111827, #374151);
+  box-shadow: 0 18px 36px rgba(17, 24, 39, 0.18);
+}
+
+.promoCard small {
+  font-weight: 900;
+  color: #ffd6e6;
+}
+
+.promoCard h2 {
+  margin: 8px 0;
+  font-size: 23px;
+}
+
+.promoCard p {
+  margin: 0;
+  font-weight: 700;
+  opacity: 0.86;
+}
+
+.serviceGrid {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 18px 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px 8px;
+  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.08);
+}
+
+.serviceItem {
+  background: transparent;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  color: #111827;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.serviceIcon {
+  width: 58px;
+  height: 58px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  background: #fff0f6;
+  color: #e91e63;
+}
+
+.homeInfoCard {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 18px;
+  margin-top: 16px;
+  box-shadow: 0 12px 26px rgba(17, 24, 39, 0.07);
+}
+
+.homeInfoCard h3 {
+  margin: 0 0 8px;
+  color: #111827;
+}
+
+.homeInfoCard p {
+  margin: 0;
+  color: #6b7280;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.bottomNav {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  width: min(450px, 92%);
+  height: 78px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 38px;
+  box-shadow: 0 16px 45px rgba(17, 24, 39, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+}
+
+.bottomNav button {
+  background: transparent;
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bottomNav button.active {
+  color: #e91e63;
+}
+
+.middleButton {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #e91e63, #ff7aa8) !important;
+  color: white !important;
+  margin-top: -36px;
+  display: grid !important;
+  place-items: center !important;
+  box-shadow: 0 18px 35px rgba(233, 30, 99, 0.42);
+}
+
+.middleButton span {
+  display: none;
+}

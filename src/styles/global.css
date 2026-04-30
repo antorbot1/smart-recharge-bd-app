@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #111827;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+select {
+  outline: none;
+}
+
+.mobileApp {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 18px 14px 110px;
+  background: linear-gradient(180deg, #ffeaf4 0%, #ffffff 32%, #f7f8fc 100%);
+}
+
+.primaryButton {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #e91e63, #ff6b9a);
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  box-shadow: 0 14px 28px rgba(233, 30, 99, 0.25);
+}
+
+.textButton {
+  background: transparent;
+  color: #e91e63;
+  font-weight: 900;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.inputGroup {
+  height: 54px;
+  background: #f7f8fc;
+  border: 1px solid #e7e9f0;
+  border-radius: 18px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputGroup svg {
+  color: #e91e63;
+  flex-shrink: 0;
+}
+
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #111827;
+}
+
+label {
+  display: block;
+  margin: 14px 0 8px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+input,
+select {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #e7e9f0;
+  border-radius: 18px;
+  padding: 0 15px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.emptyBox {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-weight: 800;
+  box-shadow: 0 12px 26px rgba(17, 24, 39, 0.07);
+}
